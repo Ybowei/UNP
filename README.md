@@ -78,7 +78,7 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
    sh dist_test_coco.sh
 
  ## 📚 Model Zoo
-* We provided both the single-branch pre-trained models and the meta-trained models (the two-branch based models) over base classes for both MSCOCO dataset and the 3 splits on VOC dataset. The model links are Google Drive and Tencent Weiyun.
+* We provided both the base-trained models over base classes and novel-finetuning models over novel classes for both two benchmarks. The model links are [Baidu Drive]().
 
- ## 📚 Acknowledgement
-* We provided both the single-branch pre-trained models and the meta-trained models (the two-branch based models) over base classes for both MSCOCO dataset and the 3 splits on VOC dataset. The model links are Google Drive and Tencent Weiyun.
+ ## 👏 Acknowledgement
+* This repo is developed based on [TFA](https://github.com/ucbdrive/few-shot-object-detection) and [mmfewshot](https://github.com/open-mmlab/mmfewshot/tree/main). Thanks for their wonderful codebases.
