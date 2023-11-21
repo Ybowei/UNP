@@ -8,7 +8,7 @@ This repository contains the source code for our paper " *Understanding Negative
 ---
 
 
-## 📑Table of Contents
+## 📑 Table of Contents
 
 * Understanding Negative Proposals in Generic Few-Shot Object Detection
   * Table of Contents
@@ -26,6 +26,22 @@ This repository contains the source code for our paper " *Understanding Negative
   * Model Zoo
 
 
-## 🧩Installation
+## 🧩 Installation
 
 Our code is based on [MMFewShot](https://github.com/open-mmlab/mmfewshot/tree/main) and please refer to [install.md](https://github.com/open-mmlab/mmfewshot/blob/main/docs/en/install.md) for installation of MMFewShot framwork. 
+Please note that we used detectron 0.1.0 in this project. Higher versions of detectron might report errors.
+
+
+## 🏰 Code Structure
+
+* **configs:** Configuration files
+* **checkpoints:** Checkpoint
+* **Weights:** Pretraing models
+* **Data:** Datasets for base training and finetuning
+* **mmfewshot:** Model framework
+* **Tools:** analysis and visualize tools
+
+## 💾 Data Preparation
+
+* Our model is evaluated on two FSOD benchmarks PASCAL VOC and MSCOCO following the previous work [TFA](https://github.com/ucbdrive/few-shot-object-detection).
+
