@@ -8,3 +8,21 @@ This repository contains the source code for our paper " *Understanding Negative
 ---
 
 
+## 📑Table of Contents
+
+* Understanding Negative Proposals in Generic Few-Shot Object Detection
+  * Table of Contents
+  * Installation
+  * Code Structure
+  * Data Preparation
+  * Model training and evaluation on MSCOCO
+    * Base training
+    * Model Fine-tuning
+    * Evaluation
+  * Model training and evaluation on PASCL VOC
+    * Base training
+    * Model Fine-tuning
+    * Evaluation
+  * Model Zoo
+
+ 
