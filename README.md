@@ -25,4 +25,6 @@ This repository contains the source code for our paper " *Understanding Negative
     * Evaluation
   * Model Zoo
 
- 
+## 🧩Installation
+
+Our code is based on [MMFewShot](https://github.com/open-mmlab/mmfewshot/tree/main) and please refer to [install.md](https://github.com/open-mmlab/mmfewshot/blob/main/docs/en/install.md) for installation of MMFewShot framwork. 
