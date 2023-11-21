@@ -47,3 +47,10 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 * Please prepare the original PASCAL VOC and MSCOCO datasets and also the few-shot datasets in the folder ./data/coco and ./data/voc respectively.
 * please refer to [PASCAL VOC](https://github.com/Ybowei/UNP/blob/main/data/voc/README.md) and [MSCOCO](https://github.com/Ybowei/UNP/blob/main/data/coco/README.md) for more detail.
 
+## 📖 Model training and evaluation on MSCOCO
+
+* We have two steps for model training, first training the model over base classes, and then fine-tuning the model over novel classes.
+* The training script for base training is
+  ```Python
+  bash 
+
