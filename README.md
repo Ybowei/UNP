@@ -47,10 +47,38 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 * Please prepare the original PASCAL VOC and MSCOCO datasets and also the few-shot datasets in the folder ./data/coco and ./data/voc respectively.
 * please refer to [PASCAL VOC](https://github.com/Ybowei/UNP/blob/main/data/voc/README.md) and [MSCOCO](https://github.com/Ybowei/UNP/blob/main/data/coco/README.md) for more detail.
 
-## 📖 Model training and evaluation on MSCOCO
+## 📖 Model training and evaluation on PASCAL VOC
 
 * We have two steps for model training, first training the model over base classes, and then fine-tuning the model over novel classes.
 * The training script for base training is
   ```Python
-  bash 
+  sh dist_train_voc_base.sh
 
+ * After model base training, we perform 1/2/3/5/10/30-shot fine-tuning over novel classes, and the training script is
+   ```Python
+   sh dist_train_voc_finetuning.sh
+
+ * We evaluate our model on the three splits in PASCLAL VOC as [TFA](https://github.com/ucbdrive/few-shot-object-detection). The evaluate script is
+   ```Python
+   sh dist_test_voc.sh
+
+ ## 📖 Model training and evaluation on MSCOCO
+
+* Similar as PASCAL VOC benchmark, we have two steps for model training.
+* The training script for base training is
+  ```Python
+  sh dist_train_coco_base.sh
+
+ * After model base training, we perform 10/30-shot fine-tuning over novel classes, and the training script is
+   ```Python
+   sh dist_train_coco_finetuning.sh
+
+ * The evaluate script is
+   ```Python
+   sh dist_test_coco.sh
+
+ ## 📚 Model Zoo
+* We provided both the single-branch pre-trained models and the meta-trained models (the two-branch based models) over base classes for both MSCOCO dataset and the 3 splits on VOC dataset. The model links are Google Drive and Tencent Weiyun.
+
+ ## 📚 Acknowledgement
+* We provided both the single-branch pre-trained models and the meta-trained models (the two-branch based models) over base classes for both MSCOCO dataset and the 3 splits on VOC dataset. The model links are Google Drive and Tencent Weiyun.
