@@ -44,4 +44,6 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 ## 💾 Data Preparation
 
 * Our model is evaluated on two FSOD benchmarks PASCAL VOC and MSCOCO following the previous work [TFA](https://github.com/ucbdrive/few-shot-object-detection).
+* Please prepare the original PASCAL VOC and MSCOCO datasets and also the few-shot datasets in the folder ./data/coco and ./data/voc respectively.
+* please refer to 
 
